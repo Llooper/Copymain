@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatting_top_title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/n_title_ib"
+    android:background="#0069B7"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/title_bar_back"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="@dimen/n_title_ib"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:padding="16dp"
+        android:src="@drawable/click_return_btn_selector"
+        android:layout_alignParentLeft="true"
+        />
+
+    <View 
+        android:id="@+id/title_v_1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#00457a"
+        android:layout_toRightOf="@+id/title_bar_back"/>
+    <View 
+        android:id="@+id/title_v_2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#64b9f9"
+        android:layout_toRightOf="@+id/title_v_1"/>
+    <TextView 
+        android:id="@+id/talk_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="联系人"
+        android:textSize="20sp"
+        android:textColor="@color/text_white"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/title_v_2"
+        android:layout_toLeftOf="@+id/title_v_3"/>
+    <View 
+        android:id="@+id/title_v_3"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#00457a"
+        android:layout_toLeftOf="@+id/title_v_4"/>
+    <View 
+        android:id="@+id/title_v_4"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#64b9f9"
+        android:layout_toLeftOf="@+id/title_bar_gps"/>
+    <ImageButton
+        android:id="@+id/title_bar_gps"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="@dimen/n_title_ib"
+        android:background="#00000000"
+        android:padding="16dp"
+        android:src="@drawable/click_gps_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

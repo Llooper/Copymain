@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<!--     
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/n_title_ib"
+        android:background="#0069B7"
+        
+        <Button
+            android:id="@+id/register_test"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/n_title_ib"
+            android:background="@drawable/popupwindows_gps_background_selector"
+            android:text="注册"
+            android:textSize="25sp"
+            android:textColor="#FFFFFFFF"
+          	android:paddingRight="5dp"
+            android:drawableLeft="@drawable/click_back"                       
+            />
+
+        <Button
+            android:id="@+id/save_test"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/n_title_ib"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/popupwindows_gps_background_selector"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+            
+    </RelativeLayout>
+ -->
+</RelativeLayout>

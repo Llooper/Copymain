@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatting_top_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0069B7"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:context=".Text_information" >
+
+    <ImageButton
+        android:id="@+id/title_bar_back"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="@dimen/n_title_ib"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:padding="16dp"
+        android:src="@drawable/title_urgent_btn_selector" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#00457a" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#64b9f9" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp" >
+
+        <RadioButton
+            android:id="@+id/rb_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/new_title_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="新闻资讯"
+            android:textColor="@color/new_title_text_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/new_title_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="消息列表"
+            android:textColor="@color/new_title_text_selector"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#00457a" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#64b9f9" />
+
+    <ImageButton
+        android:id="@+id/title_bar_btn"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="@dimen/n_title_ib"
+        android:background="#00000000"
+        android:padding="16dp"
+        android:src="@drawable/title_person_btn_selector" />
+
+</LinearLayout>

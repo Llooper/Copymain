@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 上面一句式按下去的时候的图片  按F3就看到是什么了 -->
+    <item android:drawable="@drawable/more_down" android:state_pressed="true"/>
+    
+    <!-- 下面一句式一般情况的图片  -->
+    <item android:drawable="@drawable/more_up"/>
+
+</selector>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatting_top_title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/n_title_ib"
+    android:background="#0069B7"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/send_title_bar_back"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="@dimen/n_title_ib"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:padding="16dp"
+        android:src="@drawable/click_return_btn_selector" />
+
+    <View
+        android:id="@+id/title_v_1"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/send_title_bar_back"
+        android:background="#00457a" />
+
+    <View
+        android:id="@+id/title_v_2"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/title_v_1"
+        android:background="#64b9f9" />
+
+    <TextView
+        android:id="@+id/send_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/title_v_3"
+        android:layout_toRightOf="@+id/title_v_2"
+        android:gravity="center"
+        android:text="联系人"
+        android:textColor="@color/text_white"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/title_v_3"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/title_v_4"
+        android:background="#00457a" />
+
+    <View
+        android:id="@+id/title_v_4"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/send_btn"
+        android:background="#64b9f9" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="@dimen/n_title_ib"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+	    android:background="@drawable/send_button_item"
+        android:text="发送"
+        android:textColor="@color/send_btn_text_selector"
+        android:textSize="20sp" />
+
+</RelativeLayout>

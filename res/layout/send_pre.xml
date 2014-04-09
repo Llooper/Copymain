@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99CCFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_pre_send_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_title_bar"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_pre_send_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/send_cancel_item" />
+
+        <TextView
+            android:id="@+id/tv_pre_send_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/send_pre_select_ark"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="#AEB8C2"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="6dp" >
+
+        <EditText
+            android:id="@+id/et_pre_send"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_text_select"
+            android:gravity="center"
+            android:hint="@string/send_pre_text"
+            android:textColor="@color/black"
+            android:textColorHint="#8D949D"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_pre_send_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/et_pre_send"
+            android:layout_alignRight="@+id/et_pre_send"
+            android:background="@drawable/btndelete_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+</LinearLayout>

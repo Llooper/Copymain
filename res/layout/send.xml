@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f8"
+    android:orientation="vertical" >
+
+    <include layout="@layout/send_title_bar" />
+
+    <!--
+    <RelativeLayout 
+        android:id="@+id/ll_send_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_title_bar"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+        
+        <Button
+            android:id="@+id/btn_send_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/send_cancel_item"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/tv_send_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_msg"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"
+            />
+        <Button
+                    android:id="@+id/btn_send_Send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/old_send_button_item"
+                    android:layout_alignParentRight="true"
+                    />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/send_ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_send_Id"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/btn_send_delete"
+                android:background="@drawable/send_sender_background"
+                android:ellipsize="middle"
+                android:hint="@string/send_id_hint"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btn_send_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/btn_send_search"
+                android:background="@drawable/btndelete_selector"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_send_search"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/send_search_item" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_send_ark_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="@string/ark_id"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_send_ark_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_send_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="@string/send_level"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_send_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/send_ll2"
+            android:layout_below="@+id/send_ll1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!--
+                <TextView
+                    android:id="@+id/tv_send_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="内容：          " 
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+            -->
+
+            <EditText
+                android:id="@+id/et_send_Detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/send_msg_new"
+                android:gravity="start"
+                android:hint="@string/send_something"
+                android:maxLength="500" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/send_ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/send_background"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_send_Kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/send_kind"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/sp_send_Kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_send_HeadPhoto"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/send_description"
+                android:src="@drawable/send_img" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

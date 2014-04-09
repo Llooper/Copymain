@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    tools:context=".Register" >
+
+    <include
+        android:id="@+id/register_title"
+        layout="@layout/talk_title_bar" />
+    <!--
+    <LinearLayout 
+        android:id="@+id/ll_register_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+        <TextView 
+            android:id="@+id/tv_register_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_title"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+    -->
+
+    <ScrollView
+        android:id="@+id/sv_register_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/register_title"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preference_first_item"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_register_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="@string/register_id"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_ID"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/edittext_select"
+                    android:hint="@string/register_id_hint"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/preference_item"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_register_New_Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="@string/register_pw"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_New_Password"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/edittext_select"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/register_pw_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="7dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/preference_last_item"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_register_Check_Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="@string/register_check"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_Check_Password"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/edittext_select"
+                    android:hint="@string/register_check_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="7dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_button_item" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/ll_main_Title"
+        layout="@layout/new_title_bar" />
+    <!--
+    <RelativeLayout 
+        android:id="@+id/ll_main_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/title_bar"
+        android:layout_alignParentTop="true"
+        >
+        <Button 
+            android:id="@+id/btn_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_send_item"
+            android:visibility="gone"
+            />
+        <TextView 
+            android:id="@+id/tv_main_Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="something"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+        <Button 
+            android:id="@+id/btn_main_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_refresh_item"
+            />
+    </RelativeLayout>
+    -->
+
+
+    <!--
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+                >
+
+        <RelativeLayout 
+            android:id="@+id/ll_main_ll"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            
+    <ImageView
+        android:contentDescription="@string/main_description"
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:scaleType="matrix"
+        android:src="@drawable/a"
+        android:visibility="gone"
+        />
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_main_ll2"
+        android:layout_below="@+id/ll_main_Title"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+    <!--
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                />
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_main_ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_main_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/main_bus_button_item" />
+
+        <Button
+            android:id="@+id/btn_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/main_msg_button_item" />
+
+        <Button
+            android:id="@+id/btn_main_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/main_img_button_item" />
+
+        <Button
+            android:id="@+id/btn_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/main_more_item" />
+    </LinearLayout>
+    <!--
+             <LinearLayout 
+                 android:id="@+id/ll_main_ll2"
+                 android:layout_alignParentBottom="true"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/main_bottom"
+                 android:orientation="horizontal"
+                 >
+                 <Button 
+                     android:id="@+id/btn_main_news"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:drawableTop="@drawable/main_bus_button_item"
+                     android:text="新闻"
+                     android:layout_weight="1"
+                     android:textSize="12sp"
+                     android:textColor="#ffffff"
+                     android:gravity="center"
+                     />
+                 
+                 <Button 
+                     android:id="@+id/btn_main_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:drawableTop="@drawable/main_msg_button_item"
+                     android:text="文字"
+                     android:layout_weight="1"
+                     android:textSize="12sp"
+                     android:textColor="#ffffff"
+                     android:gravity="center"
+                     />
+                 
+                 <Button 
+                     android:id="@+id/btn_main_picture"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:drawableTop="@drawable/main_img_button_item"
+                     android:text="图片"
+                     android:layout_weight="1"
+                     android:textSize="12sp"
+                     android:textColor="#ffffff"
+                     android:gravity="center"
+                     />
+                 <Button 
+            		android:id="@+id/btn_main_setting"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:drawableTop="@drawable/main_more_item"
+                    android:layout_weight="1"
+                    android:text="更多"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    />
+             </LinearLayout>
+    -->
+    <!--
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                 />
+        </RelativeLayout>
+    </TabHost>
+    -->
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_amBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/main_bottom"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        >
+    <Button 
+            android:id="@+id/btn_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/main_send_item"
+            />
+    <Button 
+            android:id="@+id/btn_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_more_item"
+            />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

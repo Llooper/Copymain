@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupwindow"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+    
+    
+    <RelativeLayout 
+        android:id="@+id/popupwindow_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+   		android:background="@drawable/popupwindows_gps_background_selector"
+   		android:paddingTop="7dp"
+   		android:paddingBottom="7dp"
+   		android:paddingLeft="8dp">
+        
+        <ImageView
+            android:id="@+id/title_bar_gps_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/gps"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/title_bar_gps_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/title_bar_gps_1"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:text=" 定位渔船"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+	</RelativeLayout>
+	
+	 <View 
+        android:id="@+id/title_gps_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#00457a"/>
+    <View 
+        android:id="@+id/title_gps_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#64b9f9"/>
+    
+    <RelativeLayout 
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupwindows_message_background_up"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="8dp">
+        
+         <ImageView
+            android:id="@+id/title_bar_gps_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_up"
+            />
+
+        <TextView
+            android:id="@+id/title_bar_gps_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title_bar_gps_3"
+            android:layout_marginLeft="18dp"
+            android:background="#00000000"
+            android:text="查看聊天记录"
+            android:textColor="@color/text_white"
+            android:layout_centerVertical="true"
+            android:textSize="18sp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_anDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_inquire_selectAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inquire_all" />
+
+    <LinearLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inquire_start"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_inquire_startTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="240dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inquire_end"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_inquire_endTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="240dp" />
+    </LinearLayout>
+
+</LinearLayout>

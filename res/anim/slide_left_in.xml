@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.1"
+    android:toAlpha="1.0"
+    android:duration="3000"/> fromAlpha 起始透明度 ， toAlpha 结束透明度  ， duration 持续时间
+-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="500"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.5"
+        android:toAlpha="1.0" />
+
+</set>

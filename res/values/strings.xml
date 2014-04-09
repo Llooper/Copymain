@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">岸</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ark_id">船号:</string>
+    <string name="title">标题</string>
+    <string name="time">时间</string>
+    <string name="poster">发布者</string>
+    <string name="detail">详细信息</string>
+    <string name="description">图片</string>
+    <string name="head">松开刷新</string>
+    <string name="info_title">详细信息</string>
+    <string name="inquire_all">查询全部信息</string>
+    <string name="inquire_start">开始时间:</string>
+    <string name="inquire_end">结束时间:</string>
+    <string name="geo_search">查询</string>
+    <string name="geo_select_date">请选择日期范围</string>
+    <string name="geo_select_lines">记录数</string>
+    <string name="geo_select_ark">请选择船号</string>
+    <string name="geo_pre_title">北斗信息选择框</string>
+    <string name="main_description">滚动条</string>
+    <string name="login_title">登录</string>
+    <string name="login_id">账号</string>
+    <string name="login_pw">密码</string>
+    <string name="login_pw_code">记住密码</string>
+    <string name="login_register">注册账号</string>
+    <string name="pulldown_footer">上拉获取更多</string>
+    <string name="register_title">注册</string>
+    <string name="register_id">账号:</string>
+    <string name="register_id_hint">请输入用户账号</string>
+    <string name="register_pw">密码:</string>
+    <string name="register_pw_hint">请输入密码(大于6位)</string>
+    <string name="register_check">确认:</string>
+    <string name="register_check_hint">请再次输入密码</string>
+    <string name="register2_title">个人信息</string>
+    <string name="register2_realname">真实姓名 :</string>
+    <string name="register2_realname_hint">请输入姓名</string>
+    <string name="register2_sex">性别 :</string>
+    <string name="register2_code">身份证号:</string>
+    <string name="register2_code_hint">请输入身份证号</string>
+    <string name="register2_addr">地址信息:</string>
+    <string name="register2_addr_hint">请输入地址</string>
+    <string name="register2_mail">电子邮件:</string>
+    <string name="register2_mail_hint">请输入E_mail地址</string>
+    <string name="register2_phone">电话号码:</string>
+    <string name="register2_phone_hint">请输入电话号码</string>
+    <string name="register2_mobile">移动电话:</string>
+    <string name="register2_mobile_hint">请输入移动电话</string>
+    <string name="register2_set">修改信息</string>
+
+    <color name="register2_set_background">#FE9B21</color>
+    <color name="register2_set_text">#0000FF</color>
+
+    <string name="send_msg">发送信息</string>
+    <string name="send_id_hint">发送信息</string>
+    <string name="send_level">等级:</string>
+    <string name="send_kind">类型:</string>
+    <string name="send_something">写点什么</string>
+    <string name="send_description">发送图片按钮</string>
+    <string name="send_pre_select_ark">选择船号</string>
+    <string name="send_pre_text">查询船号</string>
+    <string name="setting">设置</string>
+    <string name="setting_ark">查询船号:</string>
+    <string name="setting_start">开始时间:</string>
+    <string name="setting_end">结束时间:</string>
+    <string name="setting_line">查询条数:</string>
+    <string name="setting_sound">声音</string>
+    <string name="setting_shake">震动</string>
+    <string name="setting_set">修改个人信息</string>
+    <string name="set_properties">配置文件</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+    <string name="share_to_weixin">分享到微信</string>
+    <string name="share_to_weibo">分享到新浪微博</string>
+    <string name="share_to_duanxin">短信分享</string>
+    <string name="cancel">取消</string>
+    
+    <string name="VersionCode">2.3.2</string>
+
+</resources>
